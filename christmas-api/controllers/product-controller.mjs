@@ -1,26 +1,30 @@
 import { DetailsModel, ItemsModel } from "../models/ItemsModel.mjs";
 import { fetchData } from "../utilities/httpClient.mjs";
 
-export const getMovies = async (req, res) => {
+export const getProducts = async (req, res) => {
   // const url = `${process.env.BASE_URL}/discover/movie?api_key=${process.env.API_KEY}&language=en-US`;
   console.log("CONTROLLER URL");
   try {
-    const response = await fetchData("discover/movie");
+    const response = await fetchData("http://localhost:5010/decorations");
     //part of class data to send to frontend
     const items = [];
     //project data
     response.results.map((item) => {
       items.push(
-        new ItemsModel(item.id, item.title, item.poster_path, item.release_date)
+        new ItemsModel(
+          item.id,
+          item.name,
+          item.type,
+          item.diameter,
+          item.imageUrl,
+          item.price,
+          item.description
+        )
       );
     });
     res.status(200).json({
       success: true,
-      result: {
-        pageNo: response.page,
-        totalPage: response.total_pages,
-        data: items,
-      },
+      result: { data: items },
     });
     console.log("ITEMS", items);
     return;
@@ -32,21 +36,24 @@ export const getMovies = async (req, res) => {
   }
 };
 
-export const getMovieById = async (req, res) => {
+export const getProductById = async (req, res) => {
   const param = req.params.id;
-  const url = `${process.env.BASE_URL}/movie/${param}?api_key=${process.env.API_KEY}&language=en-US`;
-  console.log("MYURL", url);
+  console.log("PROD ID", param);
   try {
-    const response = await fetchData(`movie/${param}`);
+    const response = await fetchData(
+      `http://localhost:5010/decorations/${param}`
+    );
 
-    // console.log("DATA", data);
+    console.log("RES", response);
 
     const item = new DetailsModel(
       response.id,
-      response.title,
-      response.release_date,
-      response.backdrop_path,
-      response.genres
+      response.name,
+      response.type,
+      response.diameter,
+      response.imageUrl,
+      response.price,
+      response.description
     );
     res.status(200).json({ success: true, result: item });
     return;

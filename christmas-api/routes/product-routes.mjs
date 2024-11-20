@@ -1,9 +1,12 @@
 import express from "express";
-import { getMovies, getMovieById } from "../controllers/movie-controller.mjs";
+import {
+  getMovieById,
+  getProducts,
+} from "../controllers/product-controller.mjs";
 
 const router = express.Router();
 
-router.route("/").get(getMovies);
+router.route("/").get(getProducts);
 
 router.route("/:id").get(getMovieById);
 

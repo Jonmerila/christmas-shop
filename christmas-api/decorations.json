@@ -1,0 +1,95 @@
+{
+    "decorations": [
+      {
+        "id": "1",
+        "name": "Classic Christmas Tree",
+        "type": "Tree",
+        "height": "7 ft",
+        "imageUrl": "tree1.jpg",
+        "price": 150,
+        "description": "A lush, green artificial Christmas tree with pre-attached warm LED lights, perfect for creating a cozy holiday atmosphere. Easy to assemble with a sturdy base for stability."
+      },
+      {
+        "id": "2",
+        "name": "Santa Claus Figurine",
+        "type": "Figurine",
+        "height": "2 ft",
+        "imageUrl": "santa1.jpg",
+        "price": 50,
+        "description": "A charming Santa Claus figurine, complete with a red suit, a gift bag, and jolly expression. Ideal for mantle displays or as a centerpiece for holiday decorations."
+      },
+      {
+        "id": "3",
+        "name": "Snowflake String Lights",
+        "type": "Lighting",
+        "length": "20 ft",
+        "imageUrl": "lights1.jpg",
+        "price": 25,
+        "description": "Twinkling snowflake-shaped string lights to brighten up any space. Battery-operated with multiple light settings, including steady glow and twinkle mode."
+      },
+      {
+        "id": "4",
+        "name": "Christmas Wreath",
+        "type": "Wreath",
+        "diameter": "24 inches",
+        "imageUrl": "wreath1.jpg",
+        "price": 35,
+        "description": "A festive wreath adorned with red berries, pinecones, and a golden bow. Perfect for hanging on doors or walls to welcome guests during the holidays."
+      },
+      {
+        "id": "5",
+        "name": "Nutcracker Soldier",
+        "type": "Figurine",
+        "height": "3 ft",
+        "imageUrl": "nutcracker1.jpg",
+        "price": 70,
+        "description": "A traditional wooden nutcracker soldier painted in vibrant holiday colors. A classic decoration that adds a touch of nostalgia to your Christmas decor."
+      },
+      {
+        "id": "6",
+        "name": "Festive Table Runner",
+        "type": "Table Decor",
+        "dimensions": "72 x 14 inches",
+        "imageUrl": "table1.jpg",
+        "price": 20,
+        "description": "A red and gold table runner with intricate holiday patterns, perfect for enhancing your dining table setup for Christmas feasts."
+      },
+      {
+        "id": "7",
+        "name": "Holiday Stockings Set",
+        "type": "Stocking",
+        "quantity": 4,
+        "imageUrl": "stockings1.jpg",
+        "price": 40,
+        "description": "A set of four beautifully crafted stockings with festive designs, ready to be hung by the chimney for Santa's arrival."
+      },
+      {
+        "id": "8",
+        "name": "Reindeer Figurines",
+        "type": "Figurine Set",
+        "quantity": 3,
+        "imageUrl": "reindeer1.jpg",
+        "price": 60,
+        "description": "A trio of elegant reindeer figurines with gold accents. Ideal for placing on mantles or under the Christmas tree."
+      },
+      {
+        "id": "9",
+        "name": "Ornament Set",
+        "type": "Tree Decor",
+        "quantity": 24,
+        "imageUrl": "ornaments1.jpg",
+        "price": 30,
+        "description": "A set of 24 shatterproof ornaments in red, gold, and green. Includes a variety of shapes and sizes to create a stunning tree display."
+      },
+      {
+        "id": "10",
+        "name": "Snow Globe",
+        "type": "Decor",
+        "dimensions": "6 inches",
+        "imageUrl": "snowglobe1.jpg",
+        "price": 45,
+        "description": "A magical snow globe featuring a winter wonderland scene with falling snowflakes. Plays a classic holiday tune to enhance the festive mood."
+      }
+    ]
+  }
+  
