@@ -6,6 +6,7 @@ export interface IProduct {
     imageUrl: string;
     price: number;
     dimensions?: string;
+    diameter?:string;
     height?: string;
     length?: string;
 }
