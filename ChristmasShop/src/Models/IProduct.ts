@@ -9,4 +9,5 @@ export interface IProduct {
     diameter?:string;
     height?: string;
     length?: string;
+    quantity?:number;
 }

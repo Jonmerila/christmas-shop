@@ -6,7 +6,7 @@
         "name": "Classic Christmas Tree",
         "type": "Tree",
         "height": "7 ft",
-        "imageUrl": "tree1.jpg",
+        "imageUrl": "https://cdn.pixabay.com/photo/2024/11/11/07/07/tree-9189367_1280.png",
         "price": 150,
         "description": "A lush, green artificial Christmas tree with pre-attached warm LED lights, perfect for creating a cozy holiday atmosphere. Easy to assemble with a sturdy base for stability."
       },
@@ -15,18 +15,18 @@
         "name": "Santa Claus Figurine",
         "type": "Figurine",
         "height": "2 ft",
-        "imageUrl": "santa1.jpg",
+        "imageUrl": "https://th.bing.com/th/id/OIG4.63cz4CcWROd1QDe.8mIf?w=1024&h=1024&rs=1&pid=ImgDetMain",
         "price": 50,
         "description": "A charming Santa Claus figurine, complete with a red suit, a gift bag, and jolly expression. Ideal for mantle displays or as a centerpiece for holiday decorations."
       },
       {
         "id": "3",
-        "name": "Snowflake String Lights",
+        "name": "Rainbow String Lights",
         "type": "Lighting",
         "length": "20 ft",
-        "imageUrl": "lights1.jpg",
+        "imageUrl": "https://cdn.pixabay.com/photo/2022/12/22/16/16/christmas-lights-7672441_1280.jpg",
         "price": 25,
-        "description": "Twinkling snowflake-shaped string lights to brighten up any space. Battery-operated with multiple light settings, including steady glow and twinkle mode."
+        "description": "Twinkling rainbow-colored string lights to brighten up any space. Battery-operated with multiple light settings, including steady glow and twinkle mode."
       },
       {
         "id": "4",
@@ -42,7 +42,7 @@
         "name": "Nutcracker Soldier",
         "type": "Figurine",
         "height": "3 ft",
-        "imageUrl": "nutcracker1.jpg",
+        "imageUrl": "https://th.bing.com/th/id/OIG3.fpNk2p1sl70jwfhfpOPs?w=1024&h=1024&rs=1&pid=ImgDetMain",
         "price": 70,
         "description": "A traditional wooden nutcracker soldier painted in vibrant holiday colors. A classic decoration that adds a touch of nostalgia to your Christmas decor."
       },
@@ -51,7 +51,7 @@
         "name": "Festive Table Runner",
         "type": "Table Decor",
         "dimensions": "72 x 14 inches",
-        "imageUrl": "table1.jpg",
+        "imageUrl": "https://th.bing.com/th/id/OIG2.5H7rdXXBoU7BpDlzh1VC?w=1024&h=1024&rs=1&pid=ImgDetMain",
         "price": 20,
         "description": "A red and gold table runner with intricate holiday patterns, perfect for enhancing your dining table setup for Christmas feasts."
       },
@@ -59,35 +59,35 @@
         "id": "7",
         "name": "Holiday Stockings Set",
         "type": "Stocking",
-        "quantity": 4,
-        "imageUrl": "stockings1.jpg",
+        "quantity": 6,
+        "imageUrl": "https://th.bing.com/th/id/OIG2.hhPHslZ1RPaaXpLfBWgo?w=1024&h=1024&rs=1&pid=ImgDetMain",
         "price": 40,
-        "description": "A set of four beautifully crafted stockings with festive designs, ready to be hung by the chimney for Santa's arrival."
+        "description": "A set of six beautifully crafted stockings with festive designs, ready to be hung by the chimney for Santa's arrival."
       },
       {
         "id": "8",
         "name": "Reindeer Figurines",
         "type": "Figurine Set",
         "quantity": 3,
-        "imageUrl": "reindeer1.jpg",
+        "imageUrl": "https://th.bing.com/th/id/OIG4.TVucvJFwrJiUT5ZSpWLI?w=1024&h=1024&rs=1&pid=ImgDetMain",
         "price": 60,
-        "description": "A trio of elegant reindeer figurines with gold accents. Ideal for placing on mantles or under the Christmas tree."
+        "description": "A group of elegant reindeer figurines with round accents. Ideal for placing on mantles or on the dining table (Three figures included)."
       },
       {
         "id": "9",
         "name": "Ornament Set",
         "type": "Tree Decor",
-        "quantity": 24,
-        "imageUrl": "ornaments1.jpg",
+        "quantity": 6,
+        "imageUrl": "https://th.bing.com/th/id/OIG4.DHDbLByk7N.z.1pGDNUU?pid=ImgGn",
         "price": 30,
-        "description": "A set of 24 shatterproof ornaments in red, gold, and green. Includes a variety of shapes and sizes to create a stunning tree display."
+        "description": "A set of 6 shatterproof ornaments in red, gold, and green. Includes a variety of shapes and sizes to create a stunning tree display."
       },
       {
         "id": "10",
         "name": "Snow Globe",
         "type": "Decor",
         "dimensions": "6 inches",
-        "imageUrl": "snowglobe1.jpg",
+        "imageUrl": "https://cdn.pixabay.com/photo/2022/12/12/15/41/snow-globe-7651308_1280.jpg",
         "price": 45,
         "description": "A magical snow globe featuring a winter wonderland scene with falling snowflakes. Plays a classic holiday tune to enhance the festive mood."
       }
