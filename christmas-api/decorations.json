@@ -33,7 +33,7 @@
         "name": "Christmas Wreath",
         "type": "Wreath",
         "diameter": "24 inches",
-        "imageUrl": "wreath1.jpg",
+        "imageUrl": "https://i.imgur.com/rDMm7u6.jpeg",
         "price": 35,
         "description": "A festive wreath adorned with red berries, pinecones, and a golden bow. Perfect for hanging on doors or walls to welcome guests during the holidays."
       },

@@ -8,7 +8,7 @@ const Products = ({products}:{products: IProduct[]}) => {
     // console.log("PRODUCTS", products);
     return <>
     
-    {products.map((prod) => <ProdCard key={prod.id} prod={prod} data-testid="product-item"/>)}
+    {products.map((prod) => <ProdCard key={prod.id} prod={prod} />)}
     </>
 }
 

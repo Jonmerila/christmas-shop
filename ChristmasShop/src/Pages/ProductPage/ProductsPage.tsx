@@ -2,6 +2,7 @@ import Header from "../../Components/Header/Header";
 import Products from "../../Components/Products/Products";
 // import Pagination from "../../Components/Pagination/Pagination";
 
+import styles from "./ProductsPage.module.css"
 import getAllItems from "../../Utilities/LoadDecorations";
 import { IProduct } from "../../Models/IProduct";
 import { useState, useEffect } from "react";
@@ -49,7 +50,10 @@ const ProductsPage = () => {
     return <>
         <Header title={"Christmas Shop"}/>
         {/* <Pagination gotoPage={handlePagination} pagination={pagination}/> */}
-        <Products products={prod}/>
+        <section className={styles.prodGrid}>
+
+            <Products products={prod}/>
+        </section>
     </>
 }
 
