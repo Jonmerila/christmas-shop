@@ -1,6 +1,6 @@
 import express from "express";
 import {
-  getMovieById,
+  getProductById,
   getProducts,
 } from "../controllers/product-controller.mjs";
 
@@ -8,6 +8,6 @@ const router = express.Router();
 
 router.route("/").get(getProducts);
 
-router.route("/:id").get(getMovieById);
+router.route("/:id").get(getProductById);
 
 export default router;

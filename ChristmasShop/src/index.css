@@ -66,3 +66,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.pagination {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+}
+
+.pagination button {
+  border: 2px solid white;
+  background: transparent;
+  color: #fff;
+  /* border: none; */
+  font-size: 1rem;
+  outline: none !important;
+  cursor: pointer;
+}

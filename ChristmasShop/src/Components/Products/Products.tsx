@@ -5,10 +5,10 @@ import { IProduct } from "../../Models/IProduct";
 
 const Products = ({products}:{products: IProduct[]}) => {
 
-    console.log("PRODUCTS", products);
+    // console.log("PRODUCTS", products);
     return <>
     
-    {products.map((prod) => <ProdCard prod={prod}/>)}
+    {products.map((prod) => <ProdCard key={prod.id} prod={prod} data-testid="product-item"/>)}
     </>
 }
 

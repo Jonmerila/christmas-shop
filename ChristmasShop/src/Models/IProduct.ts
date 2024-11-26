@@ -1,12 +1,15 @@
 export interface IProduct {
-    id: number,
-    title: string,
+    id: string,
+    name: string,
+    type: string;
     description: string;
-    category: string;
+    imageUrl: string;
     price: number;
-    rating: number;
-    stock: number;
+    dimensions?: string;
+    height?: string;
+    length?: string;
 }
+
  
  
 //  {

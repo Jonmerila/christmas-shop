@@ -3,9 +3,12 @@ import { IProduct } from "../../Models/IProduct";
 
 
 const ProdCard = ({prod}:{prod:IProduct}) => {
-    console.log("PROD", prod);
+    // console.log("PROD", prod);
 
-    return <h1>Name: {prod.title}</h1>
+    return <div data-testid="product-item">
+        
+            <h1>Name: {prod.name}</h1>
+        </div>
 }
 
 export default ProdCard;
