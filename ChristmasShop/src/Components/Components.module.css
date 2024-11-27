@@ -12,9 +12,16 @@
 .prodCard p {
   width: 95%;
   margin-top: 0px;
+  height: 20%;
 }
 
 .prodCard h3 {
+  margin-bottom: 6px;
+}
+
+.prodCard strong {
+  font-size: 22px;
+  margin-top: auto;
   margin-bottom: 6px;
 }
 
