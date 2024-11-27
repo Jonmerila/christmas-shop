@@ -1,4 +1,8 @@
 import MainLayout from './Components/MainLayout/MainLayout'
+import { BrowserRouter as Router,
+  Routes,
+  Route
+ } from 'react-router-dom'
 import './App.css'
 
 function App() {
@@ -6,7 +10,18 @@ function App() {
 
   return (
     <>
-     <MainLayout/>
+    
+    <Router>
+    
+      
+      <Routes>
+        <Route path="/home" element={<MainLayout/>}></Route>
+        
+      </Routes>
+   
+    </Router>
+  
+     
     </>
   )
 }

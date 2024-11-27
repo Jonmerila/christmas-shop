@@ -7,28 +7,9 @@ import getAllItems from "../../Utilities/LoadDecorations";
 import { IProduct } from "../../Models/IProduct";
 import { useState, useEffect } from "react";
 
-const ProductsPage = () => {
+import Navigation from "../../Components/Nav-field/Navigation";
 
-    // const products = [
-    //     {
-    //         id: 1,
-    //         title: "Essence Mascara Lash Princess",
-    //         description: "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
-    //         category: "beauty",
-    //         price: 4,
-    //         rating: 4.94,
-    //         stock: 3,
-    //     },
-    //     {
-    //         id: 2,
-    //         title: "Baseball Bat",
-    //         description: "It's a bat",
-    //         category: "beauty sure",
-    //         price: 12,
-    //         rating: 4.94,
-    //         stock: 8,
-    //     }
-    // ]
+const ProductsPage = () => {
 
     const [prod, setProd] = useState<IProduct[]>([]);
 
@@ -48,6 +29,7 @@ const ProductsPage = () => {
     
 // console.log("PAGE", products);
     return <>
+    <Navigation/>
         <Header title={"Christmas Shop"}/>
         {/* <Pagination gotoPage={handlePagination} pagination={pagination}/> */}
         <section className={styles.prodGrid}>
