@@ -15,7 +15,7 @@ function App() {
     
       
       <Routes>
-        <Route path="/home" element={<MainLayout/>}></Route>
+        <Route path="/" element={<MainLayout/>}></Route>
         
       </Routes>
    

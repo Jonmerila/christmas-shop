@@ -30,3 +30,20 @@
   height: auto;
   object-fit: cover;
 }
+
+/* NAVBAR CSS */
+
+.navHeader {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navLi {
+  list-style-type: none;
+}

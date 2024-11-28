@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styles from "../Components.module.css";
 import Cart from "./Cart";
 
 const Navigation = () => {
@@ -7,8 +8,10 @@ const Navigation = () => {
     return <>
         <nav>
             <h3>Navbar</h3>
-            <Link to="/home">Home</Link>
-            <Cart/>
+            <div className={styles.navHeader}>
+                <Link to="/">Home</Link>
+                <Cart/>
+            </div>
         </nav>
     </>
 }

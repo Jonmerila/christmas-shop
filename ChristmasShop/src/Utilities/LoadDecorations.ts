@@ -4,10 +4,17 @@
 
 
 const getAllItems = async () => {
-    const response = await fetch("http://localhost:5010/decorations");
-    const data = await response.json();
-    console.log("RESPONSE", data);
-    return data;
+    // http://localhost:5010/decorations
+
+    try{
+
+        const response = await fetch(" http://localhost:5010/decorations");
+        const data = await response.json();
+        console.log("RESPONSE", data);
+        return data;
+    }catch(e){
+        throw new Error(`Something went wrong, ${e}`);
+    }
 }
 
 export default getAllItems;
