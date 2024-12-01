@@ -3,6 +3,9 @@ import { IProduct } from "../Models/IProduct";
 const addToCart = async (cartItem:IProduct): Promise<void> => {
     const url = "http://localhost:5010/basket";
 
+    // Should not be able to add two of the same item? 
+
+    
     try{
         const response = await fetch(url, {
             method: "POST",
