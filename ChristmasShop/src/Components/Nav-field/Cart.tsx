@@ -41,7 +41,9 @@ const Cart = () => {
     return <>
     <div className={styles.navContainer}>
         <button onClick={() => setShowCart(!showCart)}>{!showCart ? "Show Cart" : "Hide Cart"}</button>
-        {showCart && cart !== undefined && cart.map((item) => <li  onClick={() => removeProduct(item.id)} key={item.id}className={styles.navLi}>{item.name}</li>)}
+        <div className={`${styles.openCart} ${showCart ? "show" : ""}`}>
+            {showCart && cart !== undefined && cart.map((item) => <li  onClick={() => removeProduct(item.id)} key={item.id}className={styles.navLi}>{item.name}</li>)}
+        </div>
         {/* <strong>Your total is: ${totalSum}</strong> */}
     </div>
     </>

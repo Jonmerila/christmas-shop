@@ -6,8 +6,7 @@ const Navigation = () => {
 
 
     return <>
-        <nav>
-            <h3>Navbar</h3>
+        <nav className={styles.navField}>
             <div className={styles.navHeader}>
                 <Link to="/">Home</Link>
                 <Cart/>

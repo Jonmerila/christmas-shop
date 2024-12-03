@@ -2,6 +2,8 @@ import '@testing-library/jest-dom';
 import { beforeEach, describe, expect, it} from 'vitest';
 import {render, screen, within} from '@testing-library/react'
 
+import { BrowserRouter } from "react-router-dom";
+
 import Products from './Products';
 import { IProduct } from '../../Models/IProduct';
 
@@ -45,18 +47,23 @@ const testData: IProduct[] = [
     ]
 
 beforeEach(() => {
-    render(<Products products={testData}/>)
-})
+  render(
+    <BrowserRouter>
+      <Products products={testData} />
+    </BrowserRouter>
+      );
+  });
 
 describe("Products comp", () => {
     it("should contain more than two products", () => {
         const testIdItem = screen.getAllByTestId("product-item");
+        console.log("TESTITEM", testIdItem);
         expect(testIdItem).toHaveLength(testData.length);
     })
     it("should have a price for each product", () => {
         const allProducts = screen.getAllByTestId("product-item");
         allProducts.forEach((item) => {
-            const price = within(item).getByRole("strong");
+            const price = within(item).getByText(/Price:/);
             expect(price).toBeInTheDocument();
         })
     })

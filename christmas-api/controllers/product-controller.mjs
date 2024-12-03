@@ -2,37 +2,13 @@ import { DetailsModel, ItemsModel } from "../models/ItemsModel.mjs";
 import { fetchData } from "../utilities/httpClient.mjs";
 
 export const getProducts = async (req, res) => {
-  // const url = `${process.env.BASE_URL}/discover/movie?api_key=${process.env.API_KEY}&language=en-US`;
-  console.log("CONTROLLER URL");
   try {
     const response = await fetchData("http://localhost:5010/decorations");
-    //part of class data to send to frontend
-    const items = [];
-    //project data
-    response.results.map((item) => {
-      items.push(
-        new ItemsModel(
-          item.id,
-          item.name,
-          item.type,
-          item.diameter,
-          item.imageUrl,
-          item.price,
-          item.description
-        )
-      );
-    });
-    res.status(200).json({
-      success: true,
-      result: { data: items },
-    });
-    console.log("ITEMS", items);
+    console.log("SERVER API", response);
+    res.status(200).json(response);
     return;
   } catch (error) {
-    res.status(500).json({
-      success: false,
-      message: `Error, something went to shit, Error: ${error}`,
-    });
+    res.status(400).json({ message: "Something went wrong", error });
   }
 };
 

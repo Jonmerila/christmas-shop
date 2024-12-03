@@ -4,9 +4,12 @@
   padding: 12px;
   gap: 12px;
   align-items: center;
+  justify-content: center;
   width: 100%;
+  max-width: 250px;
   border: 1px solid white;
   border-radius: 8px;
+  margin: 0 auto;
 }
 
 .prodCard p {
@@ -33,15 +36,42 @@
 
 /* NAVBAR CSS */
 
+.navField {
+  border: 1px solid red;
+  border-radius: 8px;
+  padding: 12px;
+}
+
 .navHeader {
   display: flex;
   justify-content: space-evenly;
 }
 
 .navContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.openCart {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: grey;
+  padding: 12px;
+  border-radius: 12px;
+  width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.openCart.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0s 0s;
 }
 
 .navLi {

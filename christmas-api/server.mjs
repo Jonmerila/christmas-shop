@@ -1,39 +1,22 @@
-// //BACKEND WITH NODE
+import express from "express";
+import cors from "cors";
+import { getProducts } from "./controllers/product-controller.mjs";
+import dotenv from "dotenv";
 
-// //Step 1: imports
-// import express from "express";
-// //Cross origin resource sharing - Cors
-// //Allows us to use another domain to use this code
-// import cors from "cors";
-// //Used to read environment variables in node
-// import dotenv from "dotenv";
+import { fileURLToPath } from "url";
+import path from "path";
 
-// import products from "./routes/product-routes.mjs";
-// // import shows from "./routes/show-routes.mjs";
+dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const port = 3010;
+const dev = process.env.NODE_ENV !== "production";
 
-// //Step start access to .env file config
-// dotenv.config();
-// //After writing this line of code, you have access to the .env variables
+const app = express();
+app.use(cors());
 
-// //Global Variables:
-// //Get port variable from env OR port 5010
-// const PORT = process.env.PORT || 5010;
+app.get("/api/decorations", getProducts);
 
-// //Steg 3 Get a hold of express in the application
-// const app = express();
-
-// //Step 4, activate your middleware
-// // app.use(cors());
-
-// app.use(express.json());
-// //step 4.5, set up your routes and controllers, include them here
-
-// //Jon-code, we set up our routing endpoints here (get,post, put, patch)
-// // app.get("/", (req, res) => {
-// //   res.send("<h1>Node is cool</h1>");
-// // });
-
-// //Step 5 start server and listen to calls, write the port as parameter
-// app.listen(PORT, () =>
-//   console.log(`Server is running on port ${process.env.PORT}`)
-// );
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`);
+});
