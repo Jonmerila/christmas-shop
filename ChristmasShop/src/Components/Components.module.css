@@ -1,5 +1,18 @@
+/* Site header */
+.siteHeader {
+  color: red;
+  font-size: 60px;
+  border-radius: 8px;
+  border: 2px solid red;
+  padding: 12px;
+  background: rgb(229, 229, 229);
+}
+
+/* Product card */
+
 .prodCard {
   display: flex;
+  background: rgb(229, 229, 229);
   flex-direction: column;
   padding: 12px;
   gap: 12px;
@@ -7,7 +20,7 @@
   justify-content: center;
   width: 100%;
   max-width: 250px;
-  border: 1px solid white;
+  border: 2px solid red;
   border-radius: 8px;
   margin: 0 auto;
 }
@@ -29,6 +42,7 @@
 }
 
 .prodCard img {
+  border-radius: 8px;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -37,6 +51,7 @@
 /* NAVBAR CSS */
 
 .navField {
+  background: rgb(229, 229, 229);
   border: 1px solid red;
   border-radius: 8px;
   padding: 12px;
@@ -59,21 +74,34 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: grey;
+  background: black;
   padding: 12px;
   border-radius: 12px;
   width: 200px;
-  visibility: hidden;
-  opacity: 0;
   transition: opacity 0.3s ease, visibility 0s 0.3s;
+  z-index: 999;
+}
+
+.openCart ul {
+  padding: 0px;
 }
 
 .openCart.show {
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
   transition: opacity 0.3s ease, visibility 0s 0s;
 }
 
 .navLi {
+  display: flex;
+  margin-bottom: 12px;
   list-style-type: none;
+  border-bottom: 1px solid white;
+  padding: 12px;
+}
+
+.navLi button {
+  height: min-content;
+  width: min-content;
+  font-size: 14px;
 }

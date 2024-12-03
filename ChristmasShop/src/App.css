@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+body {
+  background: url("https://th.bing.com/th/id/OIG2.smr41DYbfQHdiEW_CxPu?pid=ImgGn");
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

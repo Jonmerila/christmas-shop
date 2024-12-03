@@ -3,8 +3,19 @@ import { IProduct } from "../Models/IProduct";
 const addToCart = async (cartItem:IProduct): Promise<void> => {
     const url = "http://localhost:5010/basket";
 
-    // Should not be able to add two of the same item? 
+    const cartResponse = await fetch(url);
+    if (!cartResponse.ok) {
+        throw new Error(`Failed to fetch cart, Response: ${cartResponse}`);
+    }
 
+    const cart: IProduct[] = await cartResponse.json();
+
+    const existingItem = cart.find((item) => item.id === cartItem.id);
+
+    if(existingItem){
+        alert("You cannot add two of the same product to your cart.");
+        return;
+    }
     
     try{
         const response = await fetch(url, {

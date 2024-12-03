@@ -1,0 +1,58 @@
+.productContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background: rgb(229, 229, 229);
+  border: 2px solid red;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productContainer img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.productContainer h2 {
+  font-size: 2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.productContainer p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.productPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d6a4f; /* A pleasant green color for the price */
+  margin-top: 10px;
+}
+
+.productInfo {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.productQuantity {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #333;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.productDescription {
+  font-style: italic;
+  color: #777;
+  margin-top: 15px;
+}

@@ -38,15 +38,37 @@ const Cart = () => {
     }, [])
 
 
+        // <div className={`${styles.openCart} ${showCart ? "show" : ""}`}>
+        //     {showCart && cart !== undefined && cart.map((item) => <li  onClick={() => removeProduct(item.id)} key={item.id}className={styles.navLi}>{item.name}</li>)}
+        // </div>
     return <>
     <div className={styles.navContainer}>
         <button onClick={() => setShowCart(!showCart)}>{!showCart ? "Show Cart" : "Hide Cart"}</button>
-        <div className={`${styles.openCart} ${showCart ? "show" : ""}`}>
-            {showCart && cart !== undefined && cart.map((item) => <li  onClick={() => removeProduct(item.id)} key={item.id}className={styles.navLi}>{item.name}</li>)}
+        {showCart && (
+        <div className={styles.openCart}>
+          <ul>
+            {cart && cart.length > 0 ? (
+              cart.map((item) => (
+                <li key={item.id} className={styles.navLi}>
+                  {item.name}
+                <button onClick={() => removeProduct(item.id)}>Delete</button></li> // ADD DELETE BUTTON HERE
+              ))
+            ) : (
+              <p>Your cart is empty.</p>
+            )}
+          </ul>
         </div>
+      )}
         {/* <strong>Your total is: ${totalSum}</strong> */}
     </div>
     </>
 }
+
+// 
+// cart.map((item) => (
+//     <li key={item.id} className={styles.navLi}>
+//       {item.name}
+//     </li> // ADD DELETE BUTTON HERE
+//   ))
 
 export default Cart;
