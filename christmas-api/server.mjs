@@ -3,6 +3,8 @@ import cors from "cors";
 import { getProducts } from "./controllers/product-controller.mjs";
 import dotenv from "dotenv";
 
+import { hot, comp } from "./dev.js";
+
 import { fileURLToPath } from "url";
 import path from "path";
 
@@ -14,6 +16,9 @@ const dev = process.env.NODE_ENV !== "production";
 
 const app = express();
 app.use(cors());
+
+app.use(comp);
+app.use(hot);
 
 app.get("/api/decorations", getProducts);
 

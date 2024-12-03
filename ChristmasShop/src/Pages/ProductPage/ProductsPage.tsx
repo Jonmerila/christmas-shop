@@ -7,7 +7,6 @@ import getAllItems from "../../Utilities/LoadDecorations";
 import { IProduct } from "../../Models/IProduct";
 import { useState, useEffect } from "react";
 
-import Navigation from "../../Components/Nav-field/Navigation";
 
 const ProductsPage = () => {
 
@@ -25,13 +24,10 @@ const ProductsPage = () => {
         setProd(data);
     }
 
-    // 
     
-// console.log("PAGE", products);
     return <>
-    <Navigation/>
+    
         <Header title={"Christmas Shop"}/>
-        {/* <Pagination gotoPage={handlePagination} pagination={pagination}/> */}
         <section className={styles.prodGrid}>
 
             <Products products={prod}/>

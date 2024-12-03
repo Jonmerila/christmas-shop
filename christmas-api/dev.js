@@ -1,13 +1,13 @@
 import webpack from "webpack";
 import webpackHotMiddleware from "webpack-hot-middleware";
 import webpackDevMiddleware from "webpack-dev-middleware";
-import config from "./client/webpack.config";
-config.mode = "development";
+import webpackConfig from "./webpack.config.js";
+webpackConfig.mode = "development";
 
-const compiler = webpack(config);
+const compiler = webpack(webpackConfig);
 
 export const comp = webpackDevMiddleware(compiler, {
-  publicPath: config.output.publicPath,
+  publicPath: webpackConfig.output.publicPath,
 });
 
 export const hot = webpackHotMiddleware(compiler);
