@@ -30,18 +30,7 @@ const OneProductPage = () => {
     if (!item) {
         return <p>Loading...</p>;
     }
-    
-    // id: string,
-    // name: string,
-    // type: string;
-    // description: string;
-    // imageUrl: string;
-    // price: number;
-    // dimensions?: string;
-    // diameter?:string;
-    // height?: string;
-    // length?: string;
-    // quantity?:number;
+
     return <>
         <div>
             <img src={item.imageUrl} alt={item.name} />

@@ -4,13 +4,9 @@
 
 
 const getAllItems = async () => {
-    // http://localhost:5010/decorations
-
     try{
-
-        const response = await fetch(" http://localhost:5010/decorations");
+        const response = await fetch("http://localhost:3010/api/decorations");
         const data = await response.json();
-        console.log("RESPONSE", data);
         return data;
     }catch(e){
         throw new Error(`Something went wrong, ${e}`);
