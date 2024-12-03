@@ -1,6 +1,6 @@
 import Header from "../../Components/Header/Header";
 import Products from "../../Components/Products/Products";
-// import Pagination from "../../Components/Pagination/Pagination";
+import Navigation from "../../Components/Nav-field/Navigation";
 
 import styles from "./ProductsPage.module.css"
 import getAllItems from "../../Utilities/LoadDecorations";
@@ -26,7 +26,7 @@ const ProductsPage = () => {
 
     
     return <>
-    
+     <Navigation/>
         <Header title={"Christmas Shop"}/>
         <section className={styles.prodGrid}>
 

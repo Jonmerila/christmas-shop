@@ -57,6 +57,11 @@
   padding: 12px;
 }
 
+.navField a {
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .navHeader {
   display: flex;
   justify-content: space-evenly;
