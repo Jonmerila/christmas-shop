@@ -12,11 +12,14 @@ beforeEach(() => {
 })
 
 describe("Header component", () => {
-    it("should have the correct title", () => {
-        const title = screen.getByText(/tester/i);
-        expect(title).toBeInTheDocument();
-    })
-    it("Should contain a header", () => {
-        
+    it("should display the correct title", () => {
+        const testTitle = "Tester";
+        render(<Header title={testTitle} />);
+        const titleElement = screen.getByText(testTitle);
+        expect(titleElement).toBeInTheDocument();
+    });
+    it("should have a h1", () => {
+        const heading = screen.getByRole('heading', { level: 1 });
+        expect(heading).toBeInTheDocument();
     })
 })
