@@ -5,7 +5,11 @@ import {
   getProducts,
 } from "./controllers/product-controller.mjs";
 import dotenv from "dotenv";
-import { addToCart, getCart } from "./controllers/cart-controller.mjs";
+import {
+  addToCart,
+  deleteFromCart,
+  getCart,
+} from "./controllers/cart-controller.mjs";
 
 // import { hot, comp } from "./dev.js";
 
@@ -28,6 +32,7 @@ app.get("/api/decorations/:id", getProductById);
 
 app.get("/api/basket", getCart);
 app.post("/api/basket", addToCart);
+app.delete("/api/basket/:id", deleteFromCart);
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);

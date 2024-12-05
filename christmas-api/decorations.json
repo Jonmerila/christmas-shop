@@ -1,15 +1,6 @@
 {
   "basket": [
     {
-      "id": "9",
-      "name": "Ornament Set",
-      "type": "Tree Decor",
-      "quantity": 6,
-      "imageUrl": "https://th.bing.com/th/id/OIG4.DHDbLByk7N.z.1pGDNUU?pid=ImgGn",
-      "price": 30,
-      "description": "A set of 6 shatterproof ornaments in red, gold, and green. Includes a variety of shapes and sizes to create a stunning tree display."
-    },
-    {
       "id": "1",
       "name": "Classic Christmas Tree",
       "type": "Tree",
@@ -20,16 +11,6 @@
       "description": "A lush, green artificial Christmas tree with pre-attached warm LED lights, perfect for creating a cozy holiday atmosphere. Easy to assemble with a sturdy base for stability."
     },
     {
-      "id": "10",
-      "name": "Snow Globe",
-      "type": "Decor",
-      "dimensions": "6 inches",
-      "imageUrl": "https://cdn.pixabay.com/photo/2023/11/03/10/52/ai-generated-8362701_1280.jpg",
-      "quantity": 12,
-      "price": 45,
-      "description": "A magical snow globe featuring a winter wonderland scene with falling snowflakes. Plays a classic holiday tune to enhance the festive mood."
-    },
-    {
       "id": "3",
       "name": "Rainbow String Lights",
       "type": "Lighting",
@@ -38,6 +19,16 @@
       "quantity": 3,
       "price": 25,
       "description": "Twinkling rainbow-colored string lights to brighten up any space. Battery-operated with multiple light settings, including steady glow and twinkle mode."
+    },
+    {
+      "id": "2",
+      "name": "Santa Claus Figurine",
+      "type": "Figurine",
+      "height": "2 ft",
+      "imageUrl": "https://th.bing.com/th/id/OIG4.63cz4CcWROd1QDe.8mIf?w=1024&h=1024&rs=1&pid=ImgDetMain",
+      "quantity": 14,
+      "price": 50,
+      "description": "A charming Santa Claus figurine, complete with a red suit, a gift bag, and jolly expression. Ideal for mantle displays or as a centerpiece for holiday decorations."
     }
   ],
   "decorations": [

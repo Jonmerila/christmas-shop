@@ -1,7 +1,8 @@
 import { IProduct } from "../Models/IProduct";
 
 const addToCart = async (cartItem:IProduct): Promise<void> => {
-    const url = "http://localhost:5010/basket";
+    // http://localhost:3010/api/cart
+    const url = "http://localhost:3010/api/basket";
 
     const cartResponse = await fetch(url);
     if (!cartResponse.ok) {
