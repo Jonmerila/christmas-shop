@@ -1,6 +1,25 @@
 {
   "basket": [
     {
+      "id": "9",
+      "name": "Ornament Set",
+      "type": "Tree Decor",
+      "quantity": 6,
+      "imageUrl": "https://th.bing.com/th/id/OIG4.DHDbLByk7N.z.1pGDNUU?pid=ImgGn",
+      "price": 30,
+      "description": "A set of 6 shatterproof ornaments in red, gold, and green. Includes a variety of shapes and sizes to create a stunning tree display."
+    },
+    {
+      "id": "1",
+      "name": "Classic Christmas Tree",
+      "type": "Tree",
+      "height": "7 ft",
+      "imageUrl": "https://cdn.pixabay.com/photo/2024/11/11/07/07/tree-9189367_1280.png",
+      "quantity": 9,
+      "price": 150,
+      "description": "A lush, green artificial Christmas tree with pre-attached warm LED lights, perfect for creating a cozy holiday atmosphere. Easy to assemble with a sturdy base for stability."
+    },
+    {
       "id": "10",
       "name": "Snow Globe",
       "type": "Decor",
@@ -11,13 +30,14 @@
       "description": "A magical snow globe featuring a winter wonderland scene with falling snowflakes. Plays a classic holiday tune to enhance the festive mood."
     },
     {
-      "id": "9",
-      "name": "Ornament Set",
-      "type": "Tree Decor",
-      "quantity": 6,
-      "imageUrl": "https://th.bing.com/th/id/OIG4.DHDbLByk7N.z.1pGDNUU?pid=ImgGn",
-      "price": 30,
-      "description": "A set of 6 shatterproof ornaments in red, gold, and green. Includes a variety of shapes and sizes to create a stunning tree display."
+      "id": "3",
+      "name": "Rainbow String Lights",
+      "type": "Lighting",
+      "length": "20 ft",
+      "imageUrl": "https://th.bing.com/th/id/OIG3.uFRLQFJ8Y4tDr4dSymZQ?w=1024&h=1024&rs=1&pid=ImgDetMain",
+      "quantity": 3,
+      "price": 25,
+      "description": "Twinkling rainbow-colored string lights to brighten up any space. Battery-operated with multiple light settings, including steady glow and twinkle mode."
     }
   ],
   "decorations": [

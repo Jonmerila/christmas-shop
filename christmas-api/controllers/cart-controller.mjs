@@ -16,6 +16,7 @@ export const getCart = async (req, res) => {
 
 export const addToCart = async (req, res) => {
   const cartItem = req.body;
+  console.log("CART BODY", cartItem);
   const url = "http://localhost:5010/basket";
   if (!cartItem) {
     throw new Error(
@@ -33,6 +34,7 @@ export const addToCart = async (req, res) => {
     if (!response.ok) {
       throw new Error(`Failed to update basket, Response: ${response}`);
     }
+    res.status(200).json({ message: "Item added to cart successfully" });
     console.log("Cart updated");
   } catch (e) {
     console.error("Error adding to basket", e);

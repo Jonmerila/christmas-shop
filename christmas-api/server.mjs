@@ -21,8 +21,7 @@ const port = 3010;
 const app = express();
 app.use(cors());
 
-// app.use(comp);
-// app.use(hot);
+app.use(express.json());
 
 app.get("/api/decorations", getProducts);
 app.get("/api/decorations/:id", getProductById);
