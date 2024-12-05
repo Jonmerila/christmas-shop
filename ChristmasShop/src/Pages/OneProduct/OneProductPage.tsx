@@ -12,8 +12,10 @@ const OneProductPage = () => {
     const getItemFromParam = async () => {
         if(id){
             try {
-                const data: IProduct = await getOneDecoration(+id); 
-                setItem(data); 
+                const data = await getOneDecoration(+id); 
+                console.log("ONEITEM", data);
+                const product: IProduct = data.result;
+                setItem(product); 
                 console.log("Prod item: ", data);
             } catch (error) {
                 console.error("Error fetching product: ", error);

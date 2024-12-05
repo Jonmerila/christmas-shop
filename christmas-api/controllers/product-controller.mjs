@@ -1,4 +1,4 @@
-import { DetailsModel, ItemsModel } from "../models/ItemsModel.mjs";
+import { ItemsModel } from "../models/ItemsModel.mjs";
 import { fetchData } from "../utilities/httpClient.mjs";
 
 export const getProducts = async (req, res) => {
@@ -13,24 +13,31 @@ export const getProducts = async (req, res) => {
 };
 
 export const getProductById = async (req, res) => {
-  const param = req.params.id;
-  console.log("PROD ID", param);
+  const { id } = req.params;
+  console.log("PROD ID", id);
   try {
-    const response = await fetchData(
-      `http://localhost:5010/decorations/${param}`
-    );
+    const response = await fetchData(`http://localhost:5010/decorations/${id}`);
 
-    console.log("RES", response);
-
-    const item = new DetailsModel(
+    if (!response) {
+      return res
+        .status(404)
+        .json({ success: false, message: `Product with ID ${id} not found` });
+    }
+    console.log("controller data", response);
+    const item = new ItemsModel(
       response.id,
       response.name,
       response.type,
-      response.diameter,
+      response.description,
       response.imageUrl,
       response.price,
-      response.description
+      response.dimensions || null,
+      response.diameter,
+      response.height || null,
+      response.quantity,
+      response.length || null
     );
+    console.log("Final res", item);
     res.status(200).json({ success: true, result: item });
     return;
   } catch (e) {
@@ -41,5 +48,5 @@ export const getProductById = async (req, res) => {
   }
   res
     .status(200)
-    .json({ success: true, result: `movie ID ${req.params.id} works!` });
+    .json({ success: true, result: `Product ID ${req.params.id} works!` });
 };

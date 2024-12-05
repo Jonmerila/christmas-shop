@@ -4,9 +4,9 @@ export const fetchData = async (url) => {
     const response = await fetch(url);
 
     if (response.ok) {
-      console.log("fetch function res", response);
+      // console.log("fetch function res", response);
       const result = await response.json();
-      console.log("Right result?", result);
+      // console.log("Right result?", result);
       return result;
     }
     throw new Error(

@@ -1,6 +1,9 @@
 import express from "express";
 import cors from "cors";
-import { getProducts } from "./controllers/product-controller.mjs";
+import {
+  getProductById,
+  getProducts,
+} from "./controllers/product-controller.mjs";
 import dotenv from "dotenv";
 
 // import { hot, comp } from "./dev.js";
@@ -21,6 +24,7 @@ app.use(cors());
 // app.use(hot);
 
 app.get("/api/decorations", getProducts);
+app.get("/api/decorations/:id", getProductById);
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);

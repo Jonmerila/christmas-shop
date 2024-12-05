@@ -11,8 +11,8 @@ export class ItemsModel {
     dimensions,
     diameter,
     height,
-    length,
-    quantity
+    quantity,
+    length
   ) {
     this.id = id;
     this.name = name;
@@ -23,32 +23,7 @@ export class ItemsModel {
     this.dimensions = dimensions;
     this.diameter = diameter;
     this.height = height;
-    this.length = length;
     this.quantity = quantity;
-  }
-}
-// id: string,
-// name: string,
-// type: string;
-// description: string;
-// imageUrl: string;
-// price: number;
-// dimensions?: string;
-// diameter?:string;
-// height?: string;
-// length?: string;
-// quantity?:number;
-
-export class DetailsModel extends ItemsModel {
-  constructor(
-    id,
-    title,
-    genres,
-    episodes,
-    runtime,
-    releaseDate,
-    backgroundImage
-  ) {
-    super(id, title);
+    this.length = length;
   }
 }
