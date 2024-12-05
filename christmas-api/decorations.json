@@ -9,6 +9,15 @@
       "quantity": 12,
       "price": 45,
       "description": "A magical snow globe featuring a winter wonderland scene with falling snowflakes. Plays a classic holiday tune to enhance the festive mood."
+    },
+    {
+      "id": "9",
+      "name": "Ornament Set",
+      "type": "Tree Decor",
+      "quantity": 6,
+      "imageUrl": "https://th.bing.com/th/id/OIG4.DHDbLByk7N.z.1pGDNUU?pid=ImgGn",
+      "price": 30,
+      "description": "A set of 6 shatterproof ornaments in red, gold, and green. Includes a variety of shapes and sizes to create a stunning tree display."
     }
   ],
   "decorations": [
