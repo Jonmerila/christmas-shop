@@ -1,5 +1,3 @@
-//One way to get the data we need to send to the frontend
-
 export class ItemsModel {
   constructor(
     id,

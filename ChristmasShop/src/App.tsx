@@ -7,12 +7,6 @@ import './App.css'
 import OneProductPage from './Pages/OneProduct/OneProductPage'
 
 function App() {
-  
-
-  // const api_regex = /^\/api\/.*/;
-  // if(api_regex.test(window.location.pathname)){
-  //   return
-  // }
 
   return (
     <>

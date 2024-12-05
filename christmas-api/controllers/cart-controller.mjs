@@ -2,7 +2,6 @@ import { ItemsModel } from "../models/ItemsModel.mjs";
 import { fetchData } from "../utilities/httpClient.mjs";
 
 export const getCart = async (req, res) => {
-  console.log("GETTING CART...");
   try {
     const response = await fetchData("http://localhost:5010/basket");
     res.status(200).json(response);
@@ -16,7 +15,6 @@ export const getCart = async (req, res) => {
 
 export const addToCart = async (req, res) => {
   const cartItem = req.body;
-  console.log("CART BODY", cartItem);
   const url = "http://localhost:5010/basket";
   if (!cartItem) {
     throw new Error(
@@ -35,7 +33,6 @@ export const addToCart = async (req, res) => {
       throw new Error(`Failed to update basket, Response: ${response}`);
     }
     res.status(200).json({ message: "Item added to cart successfully" });
-    console.log("Cart updated");
   } catch (e) {
     console.error("Error adding to basket", e);
   }
@@ -57,7 +54,6 @@ export const deleteFromCart = async (req, res) => {
         `Failed to delete item from basket, Response: ${response.statusText}`
       );
     }
-    console.log("Cart updated");
   } catch (e) {
     console.error("Error adding to basket", e);
   }

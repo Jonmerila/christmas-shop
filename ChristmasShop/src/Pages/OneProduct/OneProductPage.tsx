@@ -13,7 +13,6 @@ const OneProductPage = () => {
         if(id){
             try {
                 const data = await getOneDecoration(+id); 
-                console.log("ONEITEM", data);
                 const product: IProduct = data.result;
                 setItem(product); 
                 console.log("Prod item: ", data);
@@ -37,6 +36,8 @@ const OneProductPage = () => {
 
     return <>
     <Navigation/>
+
+    {/* Could make this into a component */}
          <div className={styles.productContainer}>
             <img src={item.imageUrl} alt={item.name} />
             <h2>{item.name}</h2>

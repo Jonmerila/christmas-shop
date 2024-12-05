@@ -11,16 +11,8 @@ import {
   getCart,
 } from "./controllers/cart-controller.mjs";
 
-// import { hot, comp } from "./dev.js";
-
-// import { fileURLToPath } from "url";
-// import path from "path";
-
 dotenv.config();
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
 const port = 3010;
-// const dev = process.env.NODE_ENV !== "production";
 
 const app = express();
 app.use(cors());

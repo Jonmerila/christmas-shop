@@ -1,7 +1,7 @@
 
 
 const removeFromCart = async (id:string): Promise<void> => {
-    const url = `http://localhost:5010/basket/${id}`;
+    const url = `http://localhost:3010/api/basket/${id}`;
 
     try{
         const response = await fetch(url, {
